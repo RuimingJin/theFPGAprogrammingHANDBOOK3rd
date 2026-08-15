@@ -1,0 +1,14 @@
+# Vitis HLS component build output. hls_config.cfg and vitis-comp.json are the
+# only files in image_filter/ worth keeping; everything else is generated.
+image_filter/*
+!image_filter/hls_config.cfg
+!image_filter/vitis-comp.json
+
+# Vivado
+vivado_proj/
+out/
+*.jou
+*.log
+*.stdout
+*.str
+.Xil/
