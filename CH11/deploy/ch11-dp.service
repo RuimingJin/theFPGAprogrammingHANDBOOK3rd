@@ -1,0 +1,55 @@
+# CH11 image filter -> DisplayPort demo.
+#
+# Installed to /etc/systemd/system/ch11-dp.service by deploy.sh. Which
+# bitstream and image to use live in /etc/default/ch11-dp, so switching between
+# the HLS, SystemVerilog and VHDL implementations never means editing this file.
+#
+#   sudo systemctl start   ch11-dp     run it
+#   sudo systemctl stop    ch11-dp     stop and release the monitor
+#   sudo systemctl enable  ch11-dp     also start at boot
+#   journalctl -u ch11-dp -f           watch the frame log
+
+[Unit]
+Description=CH11 image filter to DisplayPort
+Documentation=file:/home/xilinx/ch11_hil/README
+# The PL and the DRM device are both local; nothing to wait for but basic userspace.
+After=multi-user.target
+
+# If it fails repeatedly -- typically no monitor attached -- give up rather than
+# restart forever. Without this a headless boot spins on the restart loop.
+StartLimitIntervalSec=120
+StartLimitBurst=3
+
+[Service]
+Type=simple
+
+# XILINX_XRT is normally set by /etc/profile.d/xrt_setup.sh, which systemd does
+# not source. Without it pynq raises "No Devices Found" and the unit dies at
+# startup -- the single most common way to get this wrong.
+Environment=XILINX_XRT=/usr
+EnvironmentFile=/etc/default/ch11-dp
+
+WorkingDirectory=/home/xilinx/ch11_hil
+ExecStart=/usr/local/share/pynq-venv/bin/python3 -u \
+    /home/xilinx/ch11_hil/dp_display.py \
+    --hold \
+    --bitstream ${CH11_BITSTREAM} \
+    --image ${CH11_IMAGE} \
+    --interval ${CH11_INTERVAL}
+
+# Root: programming the PL and opening /dev/dri both require it.
+User=root
+
+# dp_display.py turns SIGTERM into a clean shutdown so the DisplayPort is
+# released and the contiguous buffers are freed. Give it room to finish.
+KillSignal=SIGTERM
+TimeoutStopSec=20
+
+Restart=on-failure
+RestartSec=5
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

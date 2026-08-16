@@ -1,0 +1,14 @@
+# xsim / Vivado simulation output
+*/build/
+*.jou
+*.log
+*.pb
+*.wdb
+xsim.dir/
+.Xil/
+vivado_sv/
+vivado_vhdl/
+ip_repo_sv/
+ip_repo_vhdl/
+out_sv/
+out_vhdl/
