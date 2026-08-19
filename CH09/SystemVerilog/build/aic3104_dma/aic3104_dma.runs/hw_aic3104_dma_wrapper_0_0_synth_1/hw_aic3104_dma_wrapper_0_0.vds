@@ -1,0 +1,597 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Aug 18 07:37:39 2026
+# Process ID         : 36048
+# Current directory  : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1
+# Command line       : vivado.exe -log hw_aic3104_dma_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw_aic3104_dma_wrapper_0_0.tcl
+# Log file           : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1/hw_aic3104_dma_wrapper_0_0.vds
+# Journal file       : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1\vivado.jou
+# Running On         : RjMs
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-1265U
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16995 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 26122 MB
+# Available Virtual  : 6497 MB
+#-----------------------------------------------------------
+source hw_aic3104_dma_wrapper_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 662.164 ; gain = 220.688
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'I:/files/xilinx2025_2/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.cache/ip 
+Command: synth_design -top hw_aic3104_dma_wrapper_0_0 -part xczu3eg-sfvc784-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26396
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1887.023 ; gain = 206.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hw_aic3104_dma_wrapper_0_0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_aic3104_dma_wrapper_0_0/synth/hw_aic3104_dma_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'aic3104_dma_wrapper' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma_wrapper.v:1]
+	Parameter AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'aic3104_dma' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:1]
+	Parameter AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:159]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:197]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:263]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:304]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+	Parameter FIFO_WRITE_DEPTH bound to: 128 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:522]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-226] default block is never used [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-6157] synthesizing module 'axi_dma_writer' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/axi_dma_writer.sv:40]
+	Parameter AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_dma_writer' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/axi_dma_writer.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'axi_dma_reader' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/axi_dma_reader.sv:47]
+	Parameter AXI_ADDR_WIDTH bound to: 40 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ID_WIDTH bound to: 6 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1024 - type: integer 
+	Parameter PRIME_THRESHOLD bound to: 32'sb00000000000000000000001000000000 
+INFO: [Synth 8-226] default block is never used [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/axi_dma_reader.sv:196]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/axi_dma_reader.sv:279]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dma_reader' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/axi_dma_reader.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'aic3104_dma' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'aic3104_dma_wrapper' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma_wrapper.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hw_aic3104_dma_wrapper_0_0' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_aic3104_dma_wrapper_0_0/synth/hw_aic3104_dma_wrapper_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3087]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_writer'. This will prevent further optimization [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:480]
+WARNING: [Synth 8-6014] Unused sequential element burst_addr_reg was removed.  [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/axi_dma_writer.sv:212]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rx_fifo'. This will prevent further optimization [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:430]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_reader'. This will prevent further optimization [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:524]
+WARNING: [Synth 8-6014] Unused sequential element csel_reg was removed.  [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:356]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_bresp_reg was removed.  [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:191]
+WARNING: [Synth 8-3848] Net set_int in module/entity aic3104_dma does not have driver. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:116]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'aic3104_dma'. This will prevent further optimization [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma_wrapper.v:94]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_aic3104_dma_wrapper_0_0/synth/hw_aic3104_dma_wrapper_0_0.v:249]
+INFO: [Synth 8-7129] Port m_axi_rlast in module axi_dma_reader is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[5] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[4] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[3] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[2] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[1] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[0] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[31] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[30] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[29] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[28] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[27] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[26] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[25] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[24] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[23] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[22] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[21] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[20] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[19] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[18] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[17] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[16] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[15] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[14] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[13] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[12] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[6] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[5] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[4] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[3] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[2] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[1] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[0] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awaddr[21] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awaddr[20] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awaddr[19] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awaddr[18] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awaddr[17] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awaddr[16] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_araddr[21] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_araddr[20] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_araddr[19] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_araddr[18] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_araddr[17] in module aic3104_dma is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_araddr[16] in module aic3104_dma is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:39 . Memory (MB): peak = 2027.188 ; gain = 346.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 2027.188 ; gain = 346.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 2027.188 ; gain = 346.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2027.188 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hw_aic3104_dma_wrapper_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hw_aic3104_dma_wrapper_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hw_aic3104_dma_wrapper_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hw_aic3104_dma_wrapper_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2096.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.581 . Memory (MB): peak = 2119.867 ; gain = 23.855
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2119.867 ; gain = 439.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2119.867 ; gain = 439.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2119.867 ; gain = 439.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_dma_writer'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_dma_reader'
+WARNING: [Synth 8-3936] Found unconnected internal register 'axil_addr_reg' and it is trimmed from '16' to '12' bits. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma.sv:201]
+INFO: [Synth 8-802] inferred FSM for state register 'axil_rd_cs_reg' in module 'aic3104_dma'
+INFO: [Synth 8-802] inferred FSM for state register 'axil_cs_reg' in module 'aic3104_dma'
+INFO: [Synth 8-6904] The RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+                S_DECIDE |                              001 |                              001
+                  S_DONE |                              010 |                              101
+                  S_ADDR |                              011 |                              010
+                  S_DATA |                              100 |                              011
+                  S_RESP |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_dma_writer'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'axi_dma_reader', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  S_IDLE |                               00 |                               00
+                   S_RUN |                               01 |                               01
+                  S_DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 WR_IDLE |                               00 |                               00
+               WR_W4DATA |                               01 |                               10
+               WR_W4ADDR |                               10 |                               01
+                WR_BRESP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axil_cs_reg' using encoding 'sequential' in module 'aic3104_dma'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RD_IDLE |                              001 |                               00
+                 RD_WAIT |                              010 |                               01
+             RD_W4RREADY |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axil_rd_cs_reg' using encoding 'one-hot' in module 'aic3104_dma'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:01:12 . Memory (MB): peak = 2119.867 ; gain = 439.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   40 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 2     
+	   4 Input    8 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 5     
+	   3 Input    8 Bit       Adders := 5     
+	   4 Input    7 Bit       Adders := 6     
+	   3 Input    7 Bit       Adders := 2     
+	   4 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   2 Input      7 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 52    
++---Registers : 
+	               64 Bit    Registers := 3     
+	               40 Bit    Registers := 4     
+	               32 Bit    Registers := 15    
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 33    
+	                7 Bit    Registers := 24    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 13    
+	                1 Bit    Registers := 57    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 2     
+	               4K Bit	(128 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 11    
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   6 Input    9 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 16    
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 71    
+	   4 Input    2 Bit        Muxes := 17    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 33    
+	   6 Input    1 Bit        Muxes := 21    
+	   5 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 30    
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "xpm_fifo_async:/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "xpm_fifo_async:/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7129] Port m_axi_rlast in module axi_dma_reader is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[5] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[4] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[3] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[2] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[1] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_bid[0] in module axi_dma_writer is either unconnected or has no load
+INFO: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[31] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[30] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[29] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[28] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[27] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[26] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[25] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[24] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[23] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[22] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[21] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[20] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[19] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[18] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[17] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[16] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[15] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[14] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[13] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[12] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[11] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[10] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[9] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[8] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[7] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[6] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[5] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[4] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[3] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[2] in module xpm_memory_base is either unconnected or has no load
+INFO: [Synth 8-7129] Port dinb[1] in module xpm_memory_base is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6904] The RAM "xpm_fifo_async:/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:39 . Memory (MB): peak = 2119.867 ; gain = 439.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name                                                                              | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|xpm_fifo_async:/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 128 x 32             | RAM64M8 x 10  | 
+|xpm_fifo_async:/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 128 x 32             | RAM64M8 x 10  | 
+|inst/aic3104_dma/axi_dma_writer                                                          | fifo_mem_reg                     | Implied   | 1 K x 32             | RAM64M8 x 80  | 
+|inst/aic3104_dma/axi_dma_reader                                                          | fifo_mem_reg                     | Implied   | 1 K x 32             | RAM64M8 x 80  | 
++-----------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:02:15 . Memory (MB): peak = 2751.168 ; gain = 1070.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:02:19 . Memory (MB): peak = 2756.512 ; gain = 1075.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name                                                                              | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|xpm_fifo_async:/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 128 x 32             | RAM64M8 x 10  | 
+|xpm_fifo_async:/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 128 x 32             | RAM64M8 x 10  | 
+|inst/aic3104_dma/axi_dma_writer                                                          | fifo_mem_reg                     | Implied   | 1 K x 32             | RAM64M8 x 80  | 
+|inst/aic3104_dma/axi_dma_reader                                                          | fifo_mem_reg                     | Implied   | 1 K x 32             | RAM64M8 x 80  | 
++-----------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:02:23 . Memory (MB): peak = 2785.797 ; gain = 1104.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY8  |    61|
+|2     |LUT1    |    39|
+|3     |LUT2    |   386|
+|4     |LUT3    |   289|
+|5     |LUT4    |   335|
+|6     |LUT5    |   196|
+|7     |LUT6    |   558|
+|8     |MUXF7   |   128|
+|9     |MUXF8   |    64|
+|10    |RAM64M8 |   180|
+|11    |FDRE    |  1431|
+|12    |FDSE    |    13|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:02:47 . Memory (MB): peak = 3012.367 ; gain = 1238.844
+Synthesis Optimization Complete : Time (s): cpu = 00:01:45 ; elapsed = 00:02:58 . Memory (MB): peak = 3012.367 ; gain = 1331.523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 3012.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 433 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3012.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 180 instances were transformed.
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 180 instances
+
+Synth Design complete | Checksum: 3550f4c0
+INFO: [Common 17-83] Releasing license: Synthesis
+198 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:03:39 . Memory (MB): peak = 3012.367 ; gain = 2290.102
+INFO: [Coretcl 2-1174] Renamed 46 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.303 . Memory (MB): peak = 3012.367 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1/hw_aic3104_dma_wrapper_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file hw_aic3104_dma_wrapper_0_0_utilization_synth.rpt -pb hw_aic3104_dma_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 07:41:48 2026...

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="hw_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_axi_gpio_0_0_synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_clk_wiz_0_0_synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_axi_smc_0_synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_rst_ps8_0_96M_0_synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_rst_ps8_0_96M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_axi_iic_0_0_synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_aic3104_dma_wrapper_0_0_synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="hw_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="hw_axi_gpio_0_0_synth_1"/>
+		<Parent Id="hw_clk_wiz_0_0_synth_1"/>
+		<Parent Id="hw_axi_smc_0_synth_1"/>
+		<Parent Id="hw_rst_ps8_0_96M_0_synth_1"/>
+		<Parent Id="hw_axi_iic_0_0_synth_1"/>
+		<Parent Id="hw_aic3104_dma_wrapper_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.07311",
+   "Default View_TopLeft":"-376,2",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port i2c_aic -pg 1 -lvl 2 -x 760 -y 40 -defaultsOSRD
+preplace port port-id_AIC_mclk_o -pg 1 -lvl 2 -x 760 -y 80 -defaultsOSRD
+preplace port port-id_AIC_sdata_i -pg 1 -lvl 0 -x -80 -y 20 -defaultsOSRD
+preplace port port-id_AIC_lrclk_o -pg 1 -lvl 2 -x 760 -y 60 -defaultsOSRD
+preplace port port-id_AIC_sclk_o -pg 1 -lvl 2 -x 760 -y 100 -defaultsOSRD
+preplace port port-id_AIC_sdata_o -pg 1 -lvl 2 -x 760 -y 120 -defaultsOSRD
+preplace portBus AIC_nRST -pg 1 -lvl 2 -x 760 -y 20 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 320 -y 650 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 1 -x 320 -y 310 -defaultsOSRD
+preplace inst rst_ps8_0_96M -pg 1 -lvl 1 -x 320 -y 470 -defaultsOSRD
+preplace inst audio -pg 1 -lvl 1 -x 320 -y 130 -defaultsOSRD
+preplace netloc aic3104_poll_wrapper_0_AIC_lrclk_o 1 1 1 700 60n
+preplace netloc aic3104_poll_wrapper_0_AIC_sclk_o 1 1 1 730 100n
+preplace netloc aic3104_poll_wrapper_0_i2s_sdata_o 1 1 1 740 120n
+preplace netloc axi_gpio_0_gpio_io_o 1 1 1 720 20n
+preplace netloc axi_iic_0_iic2intc_irpt 1 0 2 -40 800 680
+preplace netloc clk_wiz_0_clk_out1 1 1 1 710 80n
+preplace netloc i2s_sdata_i_0_1 1 0 1 -60 20n
+preplace netloc rst_ps8_0_96M_peripheral_aresetn 1 0 2 -30 790 660
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 2 -50 810 640
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 -60 820 720
+preplace netloc audio_m_axi 1 0 2 20 740 690
+preplace netloc axi_iic_0_IIC 1 1 1 690 40n
+preplace netloc axi_smc_M00_AXI 1 0 2 10 750 670
+preplace netloc axi_smc_M01_AXI 1 0 2 -10 770 650
+preplace netloc axi_smc_M02_AXI 1 0 2 0 760 630
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 0 2 -20 780 620
+levelinfo -pg 1 -80 320 760
+pagesize -pg 1 -db -bbox -sgen -210 0 910 830
+"
+}
+

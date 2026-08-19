@@ -1,0 +1,599 @@
+
+*** Running vivado
+    with args -log hw_axi_iic_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw_axi_iic_0_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Aug 18 07:37:39 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source hw_axi_iic_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 662.121 ; gain = 220.125
+Command: synth_design -top hw_axi_iic_0_0 -part xczu3eg-sfvc784-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24056
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1885.852 ; gain = 206.250
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hw_axi_iic_0_0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/synth/hw_axi_iic_0_0.vhd:91]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IIC_FREQ bound to: 100000 - type: integer 
+	Parameter C_TEN_BIT_ADR bound to: 0 - type: integer 
+	Parameter C_GPO_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 96968727 - type: integer 
+	Parameter C_SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_LEVEL bound to: 1 - type: integer 
+	Parameter C_SMBUS_PMBUS_HOST bound to: 0 - type: integer 
+	Parameter C_DISABLE_SETUP_VIOLATION_CHECK bound to: 0 - type: integer 
+	Parameter C_STATIC_TIMING_REG_WIDTH bound to: 0 - type: integer 
+	Parameter C_TIMING_REG_WIDTH bound to: 32 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-3491] module 'axi_iic' declared at 'd:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:6788' bound to instance 'U0' of component 'axi_iic' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/synth/hw_axi_iic_0_0.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'axi_iic' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:6862]
+INFO: [Synth 8-638] synthesizing module 'iic' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:6163]
+INFO: [Synth 8-638] synthesizing module 'axi_ipif_ssp1' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:5627]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized21' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized21' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized22' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized22' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized23' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized23' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized24' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized24' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized25' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized25' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized26' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized26' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized27' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized27' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized28' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized28' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized29' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized29' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized30' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized30' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized31' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized31' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized32' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized32' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized33' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized33' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized34' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized34' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized35' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized35' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:109]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:241]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:241]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:241]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:241]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'axi_ipif_ssp1' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:5627]
+INFO: [Synth 8-638] synthesizing module 'reg_interface' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:1623]
+INFO: [Synth 8-256] done synthesizing module 'reg_interface' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:1623]
+INFO: [Synth 8-638] synthesizing module 'filter' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:4945]
+INFO: [Synth 8-638] synthesizing module 'debounce' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:1256]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'INPUT_DOUBLE_REGS' of component 'xpm_cdc_single' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:1281]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:1256]
+INFO: [Synth 8-256] done synthesizing module 'filter' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:4945]
+INFO: [Synth 8-638] synthesizing module 'iic_control' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:2860]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:671]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:671]
+INFO: [Synth 8-638] synthesizing module 'shift8' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:831]
+INFO: [Synth 8-256] done synthesizing module 'shift8' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:831]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n__parameterized0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:671]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n__parameterized0' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:671]
+INFO: [Synth 8-256] done synthesizing module 'iic_control' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:2860]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:377]
+INFO: [Synth 8-3491] module 'FDR' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'Data_Exists_DFF' of component 'FDR' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:471]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:377]
+INFO: [Synth 8-638] synthesizing module 'dynamic_master' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:5167]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_master' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:5167]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO__parameterized0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:377]
+INFO: [Synth 8-3491] module 'FDR' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'Data_Exists_DFF' of component 'FDR' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:471]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104872' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:488]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_I' of component 'XORCY' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:495]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_I' of component 'FDRE' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:501]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334' bound to instance 'SRL16E_I' of component 'SRL16E' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:512]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO__parameterized0' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:377]
+INFO: [Synth 8-256] done synthesizing module 'iic' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:6163]
+INFO: [Synth 8-256] done synthesizing module 'axi_iic' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:6862]
+INFO: [Synth 8-256] done synthesizing module 'hw_axi_iic_0_0' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/synth/hw_axi_iic_0_0.vhd:91]
+INFO: [Synth 8-6014] Unused sequential element ro_a_reg was removed.  [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:2219]
+INFO: [Synth 8-6014] Unused sequential element sda_cout_reg_d1_reg was removed.  [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:3610]
+INFO: [Synth 8-6014] Unused sequential element gen_stop_and_scl_hi_reg was removed.  [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:3831]
+INFO: [Synth 8-6014] Unused sequential element dynamic_MSMS_d_reg was removed.  [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ipshared/67c0/hdl/axi_iic_v2_1_vh_rfs.vhd:5228]
+INFO: [Synth 8-7129] Port Cr[0] in module dynamic_master is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cr[1] in module dynamic_master is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cr[2] in module dynamic_master is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cr[4] in module dynamic_master is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cr[6] in module dynamic_master is either unconnected or has no load
+INFO: [Synth 8-7129] Port Cr[7] in module dynamic_master is either unconnected or has no load
+INFO: [Synth 8-7129] Port Adr[0] in module iic_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port Ten_adr[7] in module iic_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port Ten_adr[6] in module iic_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port Ten_adr[5] in module iic_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+INFO: [Synth 8-7129] Port Rst in module debounce is either unconnected or has no load
+INFO: [Synth 8-7129] Port Stable in module debounce is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Addr[0] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[0] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[1] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[2] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[3] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[4] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[5] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[6] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[7] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[8] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[9] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[10] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[11] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[12] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[13] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[14] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[15] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[16] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[17] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[18] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[19] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[20] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_Data[21] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_WrCE[1] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_WrCE[3] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_WrCE[5] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_WrCE[6] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IIC_WrCE[7] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[0] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[1] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[2] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[3] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[4] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[5] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[6] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Data_i2c[7] in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port reg_empty in module reg_interface is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[0] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[1] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[2] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[3] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[4] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[5] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[6] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[7] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[8] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[9] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[10] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[11] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[12] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[13] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[14] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[15] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[16] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[17] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[18] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[19] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[20] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[21] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[22] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[23] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[24] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[25] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[26] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_Data[27] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_BE[0] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_BE[1] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus2IP_BE[2] in module soft_reset is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[1] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[2] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[3] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[4] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[5] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[6] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[7] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[8] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[9] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[10] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[11] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[12] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[13] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[14] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[15] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[16] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[17] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[18] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[19] in module interrupt_control is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 2031.328 ; gain = 351.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 2031.328 ; gain = 351.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 2031.328 ; gain = 351.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2031.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/hw_axi_iic_0_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2127.605 ; gain = 0.086
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/hw_axi_iic_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/hw_axi_iic_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/hw_axi_iic_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_axi_iic_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_axi_iic_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [I:/files/xilinx2025_2/2025.2/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hw_axi_iic_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hw_axi_iic_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2127.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  FDR => FDRE: 3 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 5 instances
+  MUXCY_L => MUXCY: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.101 . Memory (MB): peak = 2127.609 ; gain = 0.004
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:01:23 . Memory (MB): peak = 2127.609 ; gain = 448.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:01:23 . Memory (MB): peak = 2127.609 ; gain = 448.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:24 . Memory (MB): peak = 2127.609 ; gain = 448.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'scl_state_reg' in module 'iic_control'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iic_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                  header |                              101 |                              001
+              ack_header |                              110 |                              010
+                rcv_data |                              100 |                              011
+                ack_data |                              011 |                              100
+               xmit_data |                              010 |                              101
+                wait_ack |                              001 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'iic_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                scl_idle |                       0000000001 |                             0000
+              start_wait |                       0000000010 |                             0001
+                   start |                       0000000100 |                             0010
+              start_edge |                       0000001000 |                             0011
+            scl_low_edge |                       0000010000 |                             0100
+                 scl_low |                       0000100000 |                             0101
+           scl_high_edge |                       0001000000 |                             0110
+                scl_high |                       0010000000 |                             0111
+               stop_edge |                       0100000000 |                             1000
+               stop_wait |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'scl_state_reg' using encoding 'one-hot' in module 'iic_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:01:27 . Memory (MB): peak = 2127.609 ; gain = 448.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 143   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   10 Bit        Muxes := 15    
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	  21 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 105   
+	   4 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:42 . Memory (MB): peak = 2127.609 ; gain = 448.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:02:24 . Memory (MB): peak = 2755.988 ; gain = 1076.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:02:34 . Memory (MB): peak = 2821.242 ; gain = 1141.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:38 ; elapsed = 00:02:35 . Memory (MB): peak = 2822.816 ; gain = 1143.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:49 ; elapsed = 00:03:04 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:49 ; elapsed = 00:03:04 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:03:04 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:03:04 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:03:04 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:03:04 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY8  |     1|
+|2     |LUT1    |     8|
+|3     |LUT2    |    49|
+|4     |LUT3    |    53|
+|5     |LUT4    |    76|
+|6     |LUT5    |    82|
+|7     |LUT6    |   180|
+|8     |MUXCY_L |     9|
+|9     |MUXF7   |     6|
+|10    |SRL16E  |    18|
+|11    |XORCY   |    12|
+|12    |FDR     |     3|
+|13    |FDRE    |   329|
+|14    |FDSE    |    42|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:03:04 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:02:40 . Memory (MB): peak = 3035.676 ; gain = 1259.793
+Synthesis Optimization Complete : Time (s): cpu = 00:01:50 ; elapsed = 00:03:06 . Memory (MB): peak = 3035.676 ; gain = 1356.074
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3035.676 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3035.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  (CARRY4) => CARRY8: 3 instances
+  FDR => FDRE: 3 instances
+
+Synth Design complete | Checksum: 37e0585d
+INFO: [Common 17-83] Releasing license: Synthesis
+299 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:20 ; elapsed = 00:03:57 . Memory (MB): peak = 3035.676 ; gain = 2315.391
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3035.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_axi_iic_0_0_synth_1/hw_axi_iic_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP hw_axi_iic_0_0, cache-ID = 411af89b06feea30
+INFO: [Coretcl 2-1174] Renamed 24 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3035.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_axi_iic_0_0_synth_1/hw_axi_iic_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file hw_axi_iic_0_0_utilization_synth.rpt -pb hw_axi_iic_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 07:42:01 2026...

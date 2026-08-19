@@ -1,0 +1,999 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Aug 18 08:04:19 2026
+# Process ID         : 29340
+# Current directory  : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1
+# Command line       : vivado.exe -log blocking.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source blocking.tcl -notrace
+# Log file           : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking.vdi
+# Journal file       : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1\vivado.jou
+# Running On         : RjMs
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-1265U
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16995 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 26122 MB
+# Available Virtual  : 7610 MB
+#-----------------------------------------------------------
+source blocking.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 665.602 ; gain = 221.430
+Command: link_design -top blocking -part xczu3eg-sfvc784-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1671.004 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB0[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB0[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB0[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB1[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB1[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB1[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB2[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB2[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB2[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB3[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB3[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB3[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[8]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[9]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[10]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[11]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[12]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[13]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[14]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[15]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[16]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[17]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[18]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[19]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[20]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[21]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[22]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[23]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[24]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[25]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[26]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[27]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SERVO[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SERVO[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SERVO[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SERVO[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SERVO*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:128]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:128]
+Finished Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1941.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+9 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1941.879 ; gain = 1276.277
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.351 . Memory (MB): peak = 1979.883 ; gain = 38.004
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2284.668 ; gain = 304.785
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2746.297 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2746.297 ; gain = 0.000
+Phase 1 Initialization | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2746.297 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2746.363 ; gain = 0.066
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2746.363 ; gain = 0.066
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Phase 2 Timer Update And Timing Data Collection | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2746.363 ; gain = 0.066
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Retarget | Checksum: 11ba8e188
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Constant propagation | Checksum: 11ba8e188
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2746.363 ; gain = 0.000
+Phase 5 Sweep | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Sweep | Checksum: 11ba8e188
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2746.363 ; gain = 0.066
+BUFG optimization | Checksum: 11ba8e188
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Shift Register Optimization | Checksum: 11ba8e188
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Post Processing Netlist | Checksum: 11ba8e188
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2746.363 ; gain = 0.066
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2746.363 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Phase 9 Finalization | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2746.363 ; gain = 0.066
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2746.363 ; gain = 0.066
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2746.363 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 11ba8e188
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2746.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2746.363 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2746.363 ; gain = 804.484
+INFO: [Vivado 12-24828] Executing command : report_drc -file blocking_drc_opted.rpt -pb blocking_drc_opted.pb -rpx blocking_drc_opted.rpx
+Command: report_drc -file blocking_drc_opted.rpt -pb blocking_drc_opted.pb -rpx blocking_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'I:/files/xilinx2025_2/2025.2/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2746.363 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2746.363 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f131bdba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2746.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2746.363 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1bd31e753
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 2746.363 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2746.363 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2746.363 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2746.363 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2746.363 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2746.363 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2797.094 ; gain = 50.730
+
+Phase 2.1.1.4 PBP: Add part constraints
+Phase 2.1.1.4 PBP: Add part constraints | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2797.094 ; gain = 50.730
+Phase 2.1.1 Partition Driven Placement | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2797.094 ; gain = 50.730
+Phase 2.1 Floorplanning | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2797.094 ; gain = 50.730
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2797.094 ; gain = 50.730
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1df74729a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2797.094 ; gain = 50.730
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 1c93fb5cb
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:21 . Memory (MB): peak = 2823.270 ; gain = 76.906
+
+Phase 2.5 Global Place Phase2
+WARNING: [Place 46-29] Timing had been disabled during Placer and, therefore, physical synthesis in Placer will be skipped.
+Phase 2.5 Global Place Phase2 | Checksum: 1c93fb5cb
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2823.270 ; gain = 76.906
+Phase 2 Global Placement | Checksum: 1c93fb5cb
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2823.270 ; gain = 76.906
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c93fb5cb
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:29 . Memory (MB): peak = 2823.270 ; gain = 76.906
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1c93fb5cb
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:29 . Memory (MB): peak = 2823.270 ; gain = 76.906
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1da873cbd
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:37 . Memory (MB): peak = 2823.270 ; gain = 76.906
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 2438fc8f2
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:41 . Memory (MB): peak = 2823.699 ; gain = 77.336
+Phase 3.3.2 Slice Area Swap | Checksum: 2438fc8f2
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:41 . Memory (MB): peak = 2823.699 ; gain = 77.336
+Phase 3.3 Small Shape DP | Checksum: 1575c726e
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:48 . Memory (MB): peak = 2825.352 ; gain = 78.988
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1575c726e
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:49 . Memory (MB): peak = 2825.352 ; gain = 78.988
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1575c726e
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:49 . Memory (MB): peak = 2825.352 ; gain = 78.988
+Phase 3 Detail Placement | Checksum: 1575c726e
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:49 . Memory (MB): peak = 2825.352 ; gain = 78.988
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1575c726e
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:53 . Memory (MB): peak = 2825.352 ; gain = 78.988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2845.969 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 14ccd09e6
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:59 . Memory (MB): peak = 2845.969 ; gain = 99.605
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 14ccd09e6
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:59 . Memory (MB): peak = 2845.969 ; gain = 99.605
+Phase 4.3 Placer Reporting | Checksum: 14ccd09e6
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:59 . Memory (MB): peak = 2845.969 ; gain = 99.605
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2845.969 ; gain = 0.000
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:59 . Memory (MB): peak = 2845.969 ; gain = 99.605
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 14ccd09e6
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:59 . Memory (MB): peak = 2845.969 ; gain = 99.605
+Ending Placer Task | Checksum: 10d26a6be
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:59 . Memory (MB): peak = 2845.969 ; gain = 99.605
+50 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:45 ; elapsed = 00:01:00 . Memory (MB): peak = 2845.969 ; gain = 99.605
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file blocking_utilization_placed.rpt -pb blocking_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file blocking_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2845.969 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file blocking_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 2845.969 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2845.969 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2845.969 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2845.969 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2845.969 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2845.969 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2845.969 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.126 . Memory (MB): peak = 2845.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3513.891 ; gain = 667.922
+INFO: [Vivado_Tcl 4-235] No timing constraint found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3513.891 ; gain = 667.922
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3513.891 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 3513.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 2684518c ConstDB: 0 ShapeSum: d19f45fc RouteDB: 15030f36
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.366 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 73b03335 | NumContArr: 2032c51f | Constraints: e44894a8 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 23ad48799
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 23ad48799
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 23ad48799
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 25db9deaf
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 4
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 4
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 22bb9004f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 22bb9004f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Phase 4 Initial Routing | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+Phase 5.1 Global Iteration 0 | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Phase 5 Rip-up And Reroute | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 6 Delay and Skew Optimization
+Phase 6 Delay and Skew Optimization | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+Phase 7.1 Hold Fix Iter | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Phase 7 Post Hold Fix | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.94642e-05 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 0.934579%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 11 Resolve XTalk
+
+Skipping xtalk assignment for non timing driven mode.
+Phase 11 Resolve XTalk | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 2e39eaa2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Time taken to check if laguna hold fix is required (in secs): 0
+Skip PhysOpt in Router because non-negative WNS value: 1e+30 .
+Total Elapsed time in route_design: 2.353 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 1f451d240
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 1f451d240
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3513.891 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+INFO: [Vivado 12-24828] Executing command : report_drc -file blocking_drc_routed.rpt -pb blocking_drc_routed.pb -rpx blocking_drc_routed.rpx
+Command: report_drc -file blocking_drc_routed.rpt -pb blocking_drc_routed.pb -rpx blocking_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file blocking_methodology_drc_routed.rpt -pb blocking_methodology_drc_routed.pb -rpx blocking_methodology_drc_routed.rpx
+Command: report_methodology -file blocking_methodology_drc_routed.rpt -pb blocking_methodology_drc_routed.pb -rpx blocking_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -file blocking_timing_summary_routed.rpt -pb blocking_timing_summary_routed.pb -rpx blocking_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file blocking_route_status.rpt -pb blocking_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file blocking_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_power -file blocking_power_routed.rpt -pb blocking_power_summary_routed.pb -rpx blocking_power_routed.rpx
+Command: report_power -file blocking_power_routed.rpt -pb blocking_power_summary_routed.pb -rpx blocking_power_routed.rpx
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+83 Infos, 103 Warnings, 100 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3513.891 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file blocking_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file blocking_bus_skew_routed.rpt -pb blocking_bus_skew_routed.pb -rpx blocking_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3513.891 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3513.891 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 3513.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH06/SystemVerilog/blocking/build/blocking.runs/impl_1/blocking_routed.dcp' has been generated.
+Command: write_bitstream -force blocking.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 3 out of 3 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: CK, D, and Q.
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 3 out of 3 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: CK, D, and Q.
+INFO: [Vivado 12-3199] DRC finished with 2 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+95 Infos, 103 Warnings, 100 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 08:06:17 2026...

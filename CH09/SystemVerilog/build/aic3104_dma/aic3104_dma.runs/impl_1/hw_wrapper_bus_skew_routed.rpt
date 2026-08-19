@@ -1,0 +1,910 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date              : Tue Aug 18 07:49:42 2026
+| Host              : RjMs running 64-bit major release  (build 9200)
+| Command           : report_bus_skew -warn_on_violation -file hw_wrapper_bus_skew_routed.rpt -pb hw_wrapper_bus_skew_routed.pb -rpx hw_wrapper_bus_skew_routed.rpx
+| Design            : hw_wrapper
+| Device            : xczu3eg-sfvc784
+| Speed File        : -2  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   65        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]]
+                                                                              Slow             10.312      -0.016     10.328
+2   67        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]]
+                                                                              Slow             10.312      -0.011     10.323
+3   69        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]]
+                                                                              Slow             10.312       0.030     10.282
+4   71        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]]
+                                                                              Slow             10.312       0.016     10.296
+5   73        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]]
+                                                                              Slow             10.312       0.013     10.299
+6   75        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]]
+                                                                              Slow             10.312       0.149     10.163
+7   77        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]]
+                                                                              Slow             10.312       0.228     10.084
+8   79        [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]]
+                                              [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]]
+                                                                              Slow             10.312      -0.046     10.358
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 7
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_pl_0              clk_out1_hw_clk_wiz_0_0
+                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow        -0.016     10.328
+
+
+Slack (MET) :             10.328ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:   -1.977ns
+  Reference Relative Delay:  -2.055ns
+  Relative CRPR:              0.094ns
+  Actual Bus Skew:           -0.016ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.761     1.960    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X20Y44         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y44         FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.076     2.036 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.330     2.366    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[6]
+    SLICE_X20Y44         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.769     4.248    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X20Y44         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.070     4.318    
+    SLICE_X20Y44         FDRE (Setup_CFF2_SLICEM_C_D)
+                                                      0.025     4.343    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                           2.366    
+                         clock arrival                          4.343    
+  -------------------------------------------------------------------
+                         relative delay                        -1.977    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.560     1.720    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X18Y43         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y43         FDRE (Prop_GFF_SLICEL_C_Q)
+                                                      0.059     1.779 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.072     1.851    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
+    SLICE_X18Y43         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.974     3.914    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X18Y43         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism             -0.070     3.844    
+    SLICE_X18Y43         FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     3.906    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           1.851    
+                         clock arrival                          3.906    
+  -------------------------------------------------------------------
+                         relative delay                        -2.055    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 7
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_hw_clk_wiz_0_0
+                      clk_pl_0              hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow        -0.011     10.323
+
+
+Slack (MET) :             10.323ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:    2.479ns
+  Reference Relative Delay:   2.397ns
+  Relative CRPR:              0.093ns
+  Actual Bus Skew:           -0.011ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.975     3.915    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X18Y45         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y45         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.079     3.994 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.317     4.311    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
+    SLICE_X15Y46         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.577     1.737    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X15Y46         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.070     1.807    
+    SLICE_X15Y46         FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.025     1.832    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           4.311    
+                         clock arrival                          1.832    
+  -------------------------------------------------------------------
+                         relative delay                         2.479    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.769     4.248    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X17Y44         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y44         FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.059     4.307 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.070     4.377    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
+    SLICE_X17Y45         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.789     1.988    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X17Y45         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism             -0.070     1.918    
+    SLICE_X17Y45         FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     1.980    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           4.377    
+                         clock arrival                          1.980    
+  -------------------------------------------------------------------
+                         relative delay                         2.397    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 7
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_hw_clk_wiz_0_0
+                      clk_pl_0              hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         0.030     10.282
+
+
+Slack (MET) :             10.282ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:    2.575ns
+  Reference Relative Delay:   2.457ns
+  Relative CRPR:              0.088ns
+  Actual Bus Skew:            0.030ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.972     3.912    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X19Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X19Y63         FDRE (Prop_GFF2_SLICEM_C_Q)
+                                                      0.079     3.991 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/Q
+                         net (fo=1, routed)           0.394     4.385    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[5]
+    SLICE_X19Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.555     1.715    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X19Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
+                         clock pessimism              0.070     1.785    
+    SLICE_X19Y63         FDRE (Setup_CFF2_SLICEM_C_D)
+                                                      0.025     1.810    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+  -------------------------------------------------------------------
+                         data arrival                           4.385    
+                         clock arrival                          1.810    
+  -------------------------------------------------------------------
+                         relative delay                         2.575    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.757     4.236    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X19Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X19Y63         FDRE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.059     4.295 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.112     4.407    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X18Y64         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.759     1.958    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X18Y64         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism             -0.070     1.888    
+    SLICE_X18Y64         FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     1.950    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           4.407    
+                         clock arrival                          1.950    
+  -------------------------------------------------------------------
+                         relative delay                         2.457    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 7
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_pl_0              clk_out1_hw_clk_wiz_0_0
+                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.016     10.296
+
+
+Slack (MET) :             10.296ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:   -1.909ns
+  Reference Relative Delay:  -2.063ns
+  Relative CRPR:              0.139ns
+  Actual Bus Skew:            0.016ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.759     1.958    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X18Y64         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y64         FDRE (Prop_AFF_SLICEL_C_Q)
+                                                      0.079     2.037 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.385     2.422    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[6]
+    SLICE_X19Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.757     4.236    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X19Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.070     4.306    
+    SLICE_X19Y63         FDRE (Setup_FFF2_SLICEM_C_D)
+                                                      0.025     4.331    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                           2.422    
+                         clock arrival                          4.331    
+  -------------------------------------------------------------------
+                         relative delay                        -1.909    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.553     1.713    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X18Y60         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y60         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.059     1.772 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.081     1.853    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X19Y60         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.984     3.924    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X19Y60         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism             -0.070     3.854    
+    SLICE_X19Y60         FDRE (Hold_BFF2_SLICEM_C_D)
+                                                      0.062     3.916    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           1.853    
+                         clock arrival                          3.916    
+  -------------------------------------------------------------------
+                         relative delay                        -2.063    
+
+
+
+Id: 5
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 8
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_hw_clk_wiz_0_0
+                      clk_pl_0              hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.013     10.299
+
+
+Slack (MET) :             10.299ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:    2.528ns
+  Reference Relative Delay:   2.422ns
+  Relative CRPR:              0.093ns
+  Actual Bus Skew:            0.013ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.979     3.919    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X17Y39         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y39         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.079     3.998 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.352     4.350    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[6]
+    SLICE_X16Y39         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.567     1.727    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X16Y39         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.070     1.797    
+    SLICE_X16Y39         FDRE (Setup_DFF2_SLICEM_C_D)
+                                                      0.025     1.822    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                           4.350    
+                         clock arrival                          1.822    
+  -------------------------------------------------------------------
+                         relative delay                         2.528    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.766     4.245    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X17Y40         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y40         FDRE (Prop_GFF_SLICEL_C_Q)
+                                                      0.059     4.304 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.075     4.379    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[4]
+    SLICE_X15Y40         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.766     1.965    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X15Y40         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism             -0.070     1.895    
+    SLICE_X15Y40         FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     1.957    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]
+  -------------------------------------------------------------------
+                         data arrival                           4.379    
+                         clock arrival                          1.957    
+  -------------------------------------------------------------------
+                         relative delay                         2.422    
+
+
+
+Id: 6
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 8
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_pl_0              clk_out1_hw_clk_wiz_0_0
+                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         0.149     10.163
+
+
+Slack (MET) :             10.163ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:   -1.788ns
+  Reference Relative Delay:  -2.025ns
+  Relative CRPR:              0.088ns
+  Actual Bus Skew:            0.149ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.760     1.959    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X15Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y63         FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.081     2.040 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.513     2.553    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[3]
+    SLICE_X15Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.767     4.246    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X15Y63         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.070     4.316    
+    SLICE_X15Y63         FDRE (Setup_HFF2_SLICEL_C_D)
+                                                      0.025     4.341    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           2.553    
+                         clock arrival                          4.341    
+  -------------------------------------------------------------------
+                         relative delay                        -1.788    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.584     1.744    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X13Y62         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y62         FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.059     1.803 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.100     1.903    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[1]
+    SLICE_X13Y62         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.996     3.936    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X13Y62         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism             -0.070     3.866    
+    SLICE_X13Y62         FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     3.928    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           1.903    
+                         clock arrival                          3.928    
+  -------------------------------------------------------------------
+                         relative delay                        -2.025    
+
+
+
+Id: 7
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 8
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_pl_0              clk_out1_hw_clk_wiz_0_0
+                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.228     10.084
+
+
+Slack (MET) :             10.084ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:   -1.754ns
+  Reference Relative Delay:  -2.075ns
+  Relative CRPR:              0.093ns
+  Actual Bus Skew:            0.228ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.793     1.992    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X17Y43         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y43         FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.081     2.073 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.514     2.587    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[3]
+    SLICE_X17Y43         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.767     4.246    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X17Y43         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.070     4.316    
+    SLICE_X17Y43         FDRE (Setup_CFF2_SLICEL_C_D)
+                                                      0.025     4.341    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           2.587    
+                         clock arrival                          4.341    
+  -------------------------------------------------------------------
+                         relative delay                        -1.754    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.560     1.720    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X18Y43         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y43         FDRE (Prop_HFF_SLICEL_C_Q)
+                                                      0.058     1.778 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.068     1.846    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[4]
+    SLICE_X18Y42         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.989     3.929    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X18Y42         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism             -0.070     3.859    
+    SLICE_X18Y42         FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.062     3.921    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]
+  -------------------------------------------------------------------
+                         data arrival                           1.846    
+                         clock arrival                          3.921    
+  -------------------------------------------------------------------
+                         relative delay                        -2.075    
+
+
+
+Id: 8
+set_bus_skew -from [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[7]}]] -to [get_cells [list {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]} {hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]}]] 10.312
+Requirement: 10.312ns
+Endpoints: 8
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_hw_clk_wiz_0_0
+                      clk_pl_0              hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                            hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]/D
+                                                                                                            Slow        -0.046     10.358
+
+
+Slack (MET) :             10.358ns  (requirement - actual skew)
+  Endpoint Source:        hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Endpoint Destination:   hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Reference Source:       hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_hw_clk_wiz_0_0)
+  Reference Destination:  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.312ns
+  Endpoint Relative Delay:    2.474ns
+  Reference Relative Delay:   2.432ns
+  Relative CRPR:              0.088ns
+  Actual Bus Skew:           -0.046ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.794     1.794    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.667 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.245     1.912    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.940 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.977     3.917    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X15Y64         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y64         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.079     3.996 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.300     4.296    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[0]
+    SLICE_X15Y64         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.135     0.135    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.025     0.160 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.567     1.727    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X15Y64         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.070     1.797    
+    SLICE_X15Y64         FDRE (Setup_HFF2_SLICEL_C_D)
+                                                      0.025     1.822    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           4.296    
+                         clock arrival                          1.822    
+  -------------------------------------------------------------------
+                         relative delay                         2.474    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_hw_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y67        BUFG_PS                      0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3796, routed)        1.610     1.610    hw_i/audio/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y2            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.240 r  hw_i/audio/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.215     2.455    hw_i/audio/clk_wiz_0/inst/clk_out1_hw_clk_wiz_0_0
+    BUFGCE_X0Y66         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.479 r  hw_i/audio/clk_wiz_0/inst/clkout1_buf/O
+    X0Y1 (CLOCK_ROOT)    net (fo=444, routed)         1.782     4.261    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X13Y64         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y64         FDRE (Prop_AFF_SLICEL_C_Q)
+                                                      0.058     4.319 r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[7]/Q
+                         net (fo=1, routed)           0.098     4.417    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[7]
+    SLICE_X13Y65         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  hw_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.171     0.171    hw_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y67        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.028     0.199 r  hw_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3796, routed)        1.794     1.993    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X13Y65         FDRE                                         r  hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]/C
+                         clock pessimism             -0.070     1.923    
+    SLICE_X13Y65         FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.062     1.985    hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/tx_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][7]
+  -------------------------------------------------------------------
+                         data arrival                           4.417    
+                         clock arrival                          1.985    
+  -------------------------------------------------------------------
+                         relative delay                         2.432    
+
+
+

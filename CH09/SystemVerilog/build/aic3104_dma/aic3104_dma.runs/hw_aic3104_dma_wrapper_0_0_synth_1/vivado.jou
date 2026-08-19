@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Aug 18 07:37:39 2026
+# Process ID         : 36048
+# Current directory  : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1
+# Command line       : vivado.exe -log hw_aic3104_dma_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw_aic3104_dma_wrapper_0_0.tcl
+# Log file           : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1/hw_aic3104_dma_wrapper_0_0.vds
+# Journal file       : D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/hw_aic3104_dma_wrapper_0_0_synth_1\vivado.jou
+# Running On         : RjMs
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-1265U
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16995 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 26122 MB
+# Available Virtual  : 6497 MB
+#-----------------------------------------------------------
+source hw_aic3104_dma_wrapper_0_0.tcl -notrace

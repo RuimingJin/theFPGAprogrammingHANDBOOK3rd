@@ -1,0 +1,404 @@
+
+*** Running vivado
+    with args -log hw_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw_wrapper.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Aug 18 07:43:37 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source hw_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 664.477 ; gain = 222.305
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'I:/files/xilinx2025_2/2025.2/Vivado/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 725.031 ; gain = 60.555
+Command: synth_design -top hw_wrapper -part xczu3eg-sfvc784-2-e -directive PerformanceOptimized -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26204
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1931.449 ; gain = 207.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hw_wrapper' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma_top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'hw' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:432]
+INFO: [Synth 8-6157] synthesizing module 'audio_imp_FTOWPL' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:13]
+INFO: [Synth 8-6157] synthesizing module 'hw_aic3104_dma_wrapper_0_0' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_aic3104_dma_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hw_aic3104_dma_wrapper_0_0' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_aic3104_dma_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt_out' of module 'hw_aic3104_dma_wrapper_0_0' is unconnected for instance 'aic3104_dma_wrapper_0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:319]
+WARNING: [Synth 8-7023] instance 'aic3104_dma_wrapper_0' of module 'hw_aic3104_dma_wrapper_0_0' has 59 connections declared, but only 58 given [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:319]
+INFO: [Synth 8-6157] synthesizing module 'hw_axi_gpio_0_0' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hw_axi_gpio_0_0' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hw_axi_iic_0_0' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hw_axi_iic_0_0' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpo' of module 'hw_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:399]
+WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'hw_axi_iic_0_0' has 27 connections declared, but only 26 given [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:399]
+INFO: [Synth 8-6157] synthesizing module 'hw_clk_wiz_0_0' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hw_clk_wiz_0_0' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_clk_wiz_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'hw_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:426]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'hw_clk_wiz_0_0' has 4 connections declared, but only 3 given [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:426]
+INFO: [Synth 8-6155] done synthesizing module 'audio_imp_FTOWPL' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:13]
+INFO: [Synth 8-6157] synthesizing module 'hw_axi_smc_0' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hw_axi_smc_0' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'hw_axi_smc_0' is unconnected for instance 'axi_smc' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:702]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'hw_axi_smc_0' is unconnected for instance 'axi_smc' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:702]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'hw_axi_smc_0' is unconnected for instance 'axi_smc' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:702]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'hw_axi_smc_0' is unconnected for instance 'axi_smc' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:702]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'hw_axi_smc_0' is unconnected for instance 'axi_smc' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:702]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'hw_axi_smc_0' is unconnected for instance 'axi_smc' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:702]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'hw_axi_smc_0' has 98 connections declared, but only 92 given [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:702]
+INFO: [Synth 8-6157] synthesizing module 'hw_rst_ps8_0_96M_0' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_rst_ps8_0_96M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hw_rst_ps8_0_96M_0' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_rst_ps8_0_96M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'hw_rst_ps8_0_96M_0' is unconnected for instance 'rst_ps8_0_96M' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:795]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'hw_rst_ps8_0_96M_0' is unconnected for instance 'rst_ps8_0_96M' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:795]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'hw_rst_ps8_0_96M_0' is unconnected for instance 'rst_ps8_0_96M' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:795]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'hw_rst_ps8_0_96M_0' is unconnected for instance 'rst_ps8_0_96M' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:795]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_96M' of module 'hw_rst_ps8_0_96M_0' has 10 connections declared, but only 6 given [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:795]
+INFO: [Synth 8-6157] synthesizing module 'hw_zynq_ultra_ps_e_0_0' [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hw_zynq_ultra_ps_e_0_0' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/.Xil/Vivado-19844-RjMs/realtime/hw_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'hw_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:802]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'hw_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 82 given [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:802]
+INFO: [Synth 8-6155] done synthesizing module 'hw' (0#1) [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/synth/hw.v:432]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [I:/files/xilinx2025_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6155] done synthesizing module 'hw_wrapper' (0#1) [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/hdl/aic3104_dma_top.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2057.496 ; gain = 333.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2057.496 ; gain = 333.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2057.496 ; gain = 333.875
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2057.496 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_zynq_ultra_ps_e_0_0/hw_zynq_ultra_ps_e_0_0/hw_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'hw_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2094.371 ; gain = 0.207
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_zynq_ultra_ps_e_0_0/hw_zynq_ultra_ps_e_0_0/hw_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'hw_i/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_smc_0/hw_axi_smc_0/hw_axi_smc_0_in_context.xdc] for cell 'hw_i/axi_smc'
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_smc_0/hw_axi_smc_0/hw_axi_smc_0_in_context.xdc] for cell 'hw_i/axi_smc'
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_rst_ps8_0_96M_0/hw_rst_ps8_0_96M_0/hw_rst_ps8_0_96M_0_in_context.xdc] for cell 'hw_i/rst_ps8_0_96M'
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_rst_ps8_0_96M_0/hw_rst_ps8_0_96M_0/hw_rst_ps8_0_96M_0_in_context.xdc] for cell 'hw_i/rst_ps8_0_96M'
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/hw_axi_iic_0_0/hw_axi_iic_0_0_in_context.xdc] for cell 'hw_i/audio/axi_iic_0'
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_iic_0_0/hw_axi_iic_0_0/hw_axi_iic_0_0_in_context.xdc] for cell 'hw_i/audio/axi_iic_0'
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_gpio_0_0/hw_axi_gpio_0_0/hw_axi_gpio_0_0_in_context.xdc] for cell 'hw_i/audio/axi_gpio_0'
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_axi_gpio_0_0/hw_axi_gpio_0_0/hw_axi_gpio_0_0_in_context.xdc] for cell 'hw_i/audio/axi_gpio_0'
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_clk_wiz_0_0/hw_clk_wiz_0_0/hw_clk_wiz_0_0_in_context.xdc] for cell 'hw_i/audio/clk_wiz_0'
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_clk_wiz_0_0/hw_clk_wiz_0_0/hw_clk_wiz_0_0_in_context.xdc] for cell 'hw_i/audio/clk_wiz_0'
+Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_aic3104_dma_wrapper_0_0/hw_aic3104_dma_wrapper_0_0/hw_aic3104_dma_wrapper_0_0_in_context.xdc] for cell 'hw_i/audio/aic3104_dma_wrapper_0'
+Finished Parsing XDC File [d:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.gen/sources_1/bd/hw/ip/hw_aic3104_dma_wrapper_0_0/hw_aic3104_dma_wrapper_0_0/hw_aic3104_dma_wrapper_0_0_in_context.xdc] for cell 'hw_i/audio/aic3104_dma_wrapper_0'
+Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_LED*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB0[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB0[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB0[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB1[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB1[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB1[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB2[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB2[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB2[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB3[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB3[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB3[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'PL_LEDRGB*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_PB*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'PL_USER_SW*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'JA_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'JB_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'JAB_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[4]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[5]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[6]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[7]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[8]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[9]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[10]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[11]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[12]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[13]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[14]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[15]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[16]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[17]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[18]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[19]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[20]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[21]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[22]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[23]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[24]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[25]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[26]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io[27]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'RBP_GPIO_tri_io*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV_tri_io[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'PL_GRV*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'SERVO[0]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'SERVO[1]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'SERVO[2]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'SERVO[3]'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'SERVO*'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:128]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc:128]
+Finished Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hw_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/xdc/zu3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hw_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hw_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc]
+WARNING: [Vivado 12-507] No nets matched 'AIC_mclk_o_IBUF_inst/O'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_poll_wrapper_0/inst/aic3104_poll/rx_ctrl_reg[0]/C'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:2]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_poll_wrapper_0/inst/aic3104_poll/rx_ctrl_sync_reg[0]/D'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:2]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_*_wrapper_0/inst/aic3104_*/rx_dly_reg[?]/C'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:3]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_*_wrapper_0/inst/aic3104_*/rx_dly_meta_reg[?]/D'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:3]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/rst_ps8_0_96M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_*_wrapper_0/inst/aic3104_poll/rst_sync_reg[0]/D'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:4]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/rst_ps8_0_96M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rst_sync_reg[0]/D'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/axi_dma_writer/sts_busy_reg/C'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'hw_i/audio/aic3104_dma_wrapper_0/inst/aic3104_dma/rx_en_reg[0]/D'. [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc:6]
+Finished Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/xdc/constraint.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hw_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2094.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2094.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2094.371 ; gain = 370.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2094.371 ; gain = 370.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2094.371 ; gain = 370.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2094.371 ; gain = 370.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2094.371 ; gain = 370.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2773.852 ; gain = 1050.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2774.113 ; gain = 1050.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2784.266 ; gain = 1060.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |hw_axi_smc_0               |         1|
+|2     |hw_rst_ps8_0_96M_0         |         1|
+|3     |hw_zynq_ultra_ps_e_0_0     |         1|
+|4     |hw_aic3104_dma_wrapper_0_0 |         1|
+|5     |hw_axi_gpio_0_0            |         1|
+|6     |hw_axi_iic_0_0             |         1|
+|7     |hw_clk_wiz_0_0             |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |hw_aic3104_dma_wrapper_0 |     1|
+|2     |hw_axi_gpio_0            |     1|
+|3     |hw_axi_iic_0             |     1|
+|4     |hw_axi_smc               |     1|
+|5     |hw_clk_wiz_0             |     1|
+|6     |hw_rst_ps8_0_96M         |     1|
+|7     |hw_zynq_ultra_ps_e_0     |     1|
+|8     |IBUF                     |     1|
+|9     |IOBUF                    |     2|
+|10    |OBUF                     |     5|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 3034.551 ; gain = 1274.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 3034.551 ; gain = 1310.930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3034.551 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3034.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+Synth Design complete | Checksum: 4cbbcccc
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:56 . Memory (MB): peak = 3034.551 ; gain = 2309.520
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3034.551 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/newSPACE/git/The-FPGA-Programming-Handbook-Third-Edition/CH09/SystemVerilog/build/aic3104_dma/aic3104_dma.runs/synth_1/hw_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file hw_wrapper_utilization_synth.rpt -pb hw_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 07:45:36 2026...
